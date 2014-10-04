@@ -1,6 +1,6 @@
 {
   "name": "inkpad",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Interface to inkpad.io",
   "main": "index.js",
   "scripts": {
