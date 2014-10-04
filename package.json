@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "inkpad": "bin/inkpad.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/larskluge/node-inkpad"
@@ -20,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/larskluge/node-inkpad/issues"
   },
-  "homepage": "https://github.com/larskluge/node-inkpad"
+  "homepage": "https://github.com/larskluge/node-inkpad",
+  "devDependencies": {
+    "coffee-script": "^1.8.0"
+  },
+  "dependencies": {
+    "request": "^2.44.0",
+    "bluebird": "^2.3.4"
+  }
 }
