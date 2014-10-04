@@ -1,0 +1,24 @@
+{
+  "name": "inkpad",
+  "version": "0.0.0",
+  "description": "Interface to inkpad.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/larskluge/node-inkpad"
+  },
+  "keywords": [
+    "inkpad",
+    "editor",
+    "api"
+  ],
+  "author": "Lars Kluge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/larskluge/node-inkpad/issues"
+  },
+  "homepage": "https://github.com/larskluge/node-inkpad"
+}
