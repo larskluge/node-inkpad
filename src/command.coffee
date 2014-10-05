@@ -1,7 +1,6 @@
-Promise = require "bluebird"
-request = Promise.promisifyAll(require "request")
 program = require "commander"
 version = require("../package.json").version
+inkpad = require "./inkpad"
 
 
 module.exports.run = ->
@@ -19,10 +18,5 @@ module.exports.run = ->
       require("open")("http://www.inkpad.io/pads/new")
     else
       id = process.argv[2]
-      url = "http://www.inkpad.io/#{id}"
-
-      request.getAsync(url)
-        .spread (resp, body) ->
-          body
-        .then console.log
+      inkpad(id).pipe(process.stdout)
 

@@ -2,7 +2,7 @@
   "name": "inkpad",
   "version": "0.0.3",
   "description": "Interface to inkpad.io",
-  "main": "index.js",
+  "main": "lib/inkpad.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,7 +29,6 @@
   },
   "dependencies": {
     "request": "^2.44.0",
-    "bluebird": "^2.3.4",
     "commander": "^2.3.0",
     "open": "0.0.5"
   }
