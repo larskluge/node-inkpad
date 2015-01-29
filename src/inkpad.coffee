@@ -3,7 +3,7 @@ request = require "request"
 
 module.exports = (id) ->
 
-  url = "http://www.inkpad.io/#{id}"
+  url = "https://www.inkpad.io/#{id}"
 
   request(url)
 

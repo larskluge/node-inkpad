@@ -15,7 +15,7 @@ module.exports.run = ->
     program.help()
   else
     if program.new
-      require("open")("http://www.inkpad.io/pads/new")
+      require("open")("https://www.inkpad.io/pads/new")
     else
       id = process.argv[2]
       inkpad(id).pipe(process.stdout)
