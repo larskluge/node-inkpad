@@ -3,7 +3,10 @@ request = require "request"
 
 module.exports = (id) ->
 
-  url = "https://www.inkpad.io/#{id}"
+  options =
+    url: "https://www.inkpad.io/#{id}"
+    headers:
+      "Accept": "text/html;vanilla"
 
-  request(url)
+  request options
 
