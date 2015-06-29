@@ -5,8 +5,9 @@ module.exports = (id) ->
 
   options =
     url: "https://www.inkpad.io/#{id}"
-    headers:
-      "Accept": "text/html;vanilla"
+
+  if id.indexOf('.') < 0
+    options.headers = "Accept": "text/html;vanilla"
 
   request options
 
